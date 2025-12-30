@@ -1,116 +1,28 @@
-# Site settings
-#title: ebiyaSG
-#description: "Specialist Caridina shrimp tanks, shrimp care guides, and premium shrimp products in Singapore."
-#tagline: "Premium Caridina shrimp care and specialist shrimp tanks in Singapore"
-author: ebiyaSG
+title: Your Site Name
+tagline: Clean, fast GitHub Pages site
+description: "Production-ready Jekyll starter optimized for Core Web Vitals and SEO."
 
-# GitHub Pages / Custom Domain
-url: "https://dream.ebiya.sg"
-baseurl: "" # MUST be empty when using a custom domain
+url: "https://username.github.io"
+baseurl: ""
 
-# Build settings
+author:
+  name: Your Name
+
 theme: minima
 
-# Plugins
+markdown: kramdown
+permalink: pretty
+
 plugins:
-  - jekyll-sitemap
+  - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-last-modified-at
 
-# Optional: Set default date format
-last-modified-at:
-    date-format: '%Y-%m-%d'
+sass:
+  sass_dir: assets/css
+  style: compressed
 
-
-# SEO & locale
-locale: "en_SG"
-timezone: "Asia/Singapore"
-
-# Author metadata (minima-compatible)
-author:
-  name: "ebiyaSG"
-  email: "bennyyuen@consultant.com"
-  url: "https://ebiya.sg"
-
-# Social Media Links (legacy keys for your templates)
-instagram_url: "https://instagram.com/ebiyasg"
-tiktok_url: "https://tiktok.com/@fish_ah_gong"
-whatsapp_url: "https://wa.me/6589002228"
-
-# Social media profiles (for SEO cards)
-# twitter:
-#  username: "your_twitter_handle"   # e.g. ebiyasg
-#  card: "summary_large_image"
-
-# Default image for social sharing (ensure this file exists)
-image: "/assets/images/ebiya-og-default.jpg"
-
-# Facebook Open Graph
-# facebook:
-#  app_id: "your_facebook_app_id"
-
-# Minima-specific social links (used in header/footer)
-minima:
-  skin: dark  # Optional; triggers Minima's dark palette (we override most anyway)
-  
-  # Control header navigation (add/remove pages as needed)
-  # Header navigation (maps to your actual pages)
-  header_pages:
-    - about.md
-    - shrimp.md
-    - tank-builder.md
-    - blog.md
-    - faq.md
-    - contact.md
-  
-  # Show excerpts on blog/home
-  show_excerpts: true
-  
-  # Clean date format
-  date_format: "%Y-%m-%d"
-  
-  # Footer social icons
-  # social_links:
-  #  - { platform: instagram, user_url: "https://instagram.com/ebiyasg" }
-  #  - { platform: tiktok,    user_url: "https://tiktok.com/@fish_ah_gong" }
-  #  - { platform: whatsapp,  user_url: "https://wa.me/6589002228" }
-
-# Search engine verification (replace with real codes)
-google_site_verification: "ULsSS9SW0O2t0d76FM20iITO83i9vbTNtTVclZiV7mM"
-# bing_site_verification: "your_bing_verification_code"
-
-# Webmaster tools (alternative style some plugins use)
-# webmaster_verifications:
-#  google: "your_google_verification_code"
-#  bing: "your_bing_verification_code"
-
-# Social sharing defaults (Open Graph / Twitter)
-og_image: "/assets/images/ebiya-og-default.jpg"
-twitter_image: "/assets/images/ebiya-twitter-card.jpg"
-
-# -----
-exclude:
-     - "howto-folders/"
-     - "google20e8803e3b9ccf76.html"
-
-# Optional: front matter defaults for posts/pages (SEO-friendly)
 defaults:
   - scope:
       path: ""
-      type: "posts"
     values:
-      layout: "post"
-      author: "ebiyaSG"
-      image: "/assets/images/ebiya-og-default.jpg"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-      image: "/assets/images/ebiya-og-default.jpg"
-  - scope:
-      path: "howto-folders/**"
-    values:
-      sitemap: false
-
-permalink: /:title/
+      layout: page
